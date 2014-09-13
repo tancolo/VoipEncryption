@@ -43,7 +43,7 @@ public class MicrophoneReader {
 	      AUDIO_SOURCE, AudioCodec.SAMPLE_RATE,
 	      AudioFormat.CHANNEL_CONFIGURATION_MONO,
 	      AudioFormat.ENCODING_PCM_16BIT, AUDIO_BUFFER_SIZE * 10);
-	  
+/*	  
 	  private byte encodedData[] = new byte[512];
 	  private AudioCodec codec;
 	  private boolean micStarted = false;
@@ -221,9 +221,9 @@ public class MicrophoneReader {
 	      }
 
 	      totalSamplesRead += samplesRead;
-	      /*if (debugTimer.periodically()) {
-	        Log.d("MicrophoneReader", "Total read: " + totalSamplesRead);
-	      }*/
+//	      if (debugTimer.periodically()) {
+//	        Log.d("MicrophoneReader", "Total read: " + totalSamplesRead);
+//	      }
 	      long readStopTime = SystemClock.uptimeMillis();
 	      if (readStopTime - readStartTime > 300) {
 	        Log.e("MicrophoneReader", "STRANGE LONG MIC READ TIME: "
@@ -255,4 +255,5 @@ public class MicrophoneReader {
 	  public void muteAudio(AudioChunk chunk) {
 	    Arrays.fill(chunk.getChunk(), (short) 0);
 	  }	  
+	  */
 }

@@ -4,5 +4,7 @@
     <string name="app_name">CktEncryptVoip</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="voice_record">Voice Record</string>
+    <string name="voice_play">Voice Play</string>
 
 </resources>
